@@ -1,0 +1,50 @@
+module.exports = {
+  root: true,
+  env: {
+    node: true,
+    browser: true,
+    es2021: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:@typescript-eslint/recommended',
+    '@vue/eslint-config-typescript/recommended',
+    '@vue/eslint-config-prettier',
+  ],
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
+  },
+  plugins: ['vue', '@typescript-eslint'],
+  rules: {
+    'spaced-comment': 'off',
+    'no-empty-function': 'off',
+    'vue/no-v-html': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'vue/one-component-per-file': 'off',
+    'vue/attributes-order': [
+      'error',
+      {
+        order: [
+          'DEFINITION',
+          'LIST_RENDERING',
+          ['UNIQUE', 'SLOT'],
+          'CONDITIONALS',
+          'RENDER_MODIFIERS',
+          'CONTENT',
+          'GLOBAL',
+          'TWO_WAY_BINDING',
+          'OTHER_DIRECTIVES',
+          'OTHER_ATTR',
+          'EVENTS',
+        ],
+        alphabetical: false,
+      },
+    ],
+    'vue/multi-word-component-names': 'off',
+  },
+}

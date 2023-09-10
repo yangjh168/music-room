@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  /* // 适配浏览器原生样式 */
+  color-scheme: light dark;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 14px;
+  color: var(--x-text-color-1);
+  background-color: var(--x-bg-color-1);
+  -webkit-text-size-adjust: 100% !important;
+  font-family: PingFang SC, Helvetica Neue, Helvetica, Hiragino Sans GB,
+    Microsoft YaHei, SimSun, sans-serif;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+:-webkit-full-screen {
+  .hidden-fullscreen {
+    display: none;
+  }
+}
+
+:root {
+  --scrollbar-size: 8px;
+}
